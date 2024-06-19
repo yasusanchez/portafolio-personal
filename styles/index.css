@@ -12,7 +12,7 @@ header {
     background-color:#c49797;
 }
 
-.profile-pic {
+.photo {
     width: 9rem;
     height: 9rem;
     border-radius: 10%;
@@ -39,8 +39,9 @@ h1 {
 .container-information > h2 {
     text-align: center;
     font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: -10px;
+    background-color: aqua;
 }
 
 .container-information > p {
@@ -49,7 +50,8 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -10px;
     position: relative;
-    right: 0.9rem;
+    right: 0.9px;
+    background-color: #301f1f;
 }
 
 .projects {
@@ -213,21 +215,34 @@ hr {
 }
 
 @media screen and (min-width: 480px) and (max-width: 932px) {
-    header {    
-      width: 100vw;
+    header {
+        width: 100vw;
     }
   
     main {
-      width: 100vw;
+        width: 100vw;
     }
-  
-    .projects {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+
+    .container-experiences1 {
+        margin-left: 65px;
     }
-  
-    .projects > .project-info {
-      width: 20rem;
+
+    .container-experiences2 {
+        margin-left: 65px;
+    }
+
+    .container-information > h2 {
+        align-items: center;
+        margin-left: 85px;
+    }
+
+    .container-information > p {
+        position: relative;
+        left: 50px;
+    }
+
+    .photo {
+        margin-left: 50px;
     }
 }
+
