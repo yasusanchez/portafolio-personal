@@ -378,210 +378,97 @@ progress::-webkit-progress-bar {
 }
 
 
+@media screen and (min-width: 430px) and (max-width: 932px){
+    header {
+        width: 100vw;
+    }
+}
+
+
 @media screen and (min-width: 975px) and (max-width: 1559px) {
-   header{
-      width: 100vw;
-      height: 65vh;
-   }
+    header {
+        width: 100vw;
+        height: 45vh;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .footer {
+        width: 100vw;
+    }
+
+    .container-information > h2 {
+
+        position: relative;
+        left: 540px;
+        width: 800px;
+        margin-top: -400px;
+        font-size: 40px;
+    }
+
+    .container-information > p {
+        position: relative;
+        left: 670px;
+        width: 500px;
+        font-size: 30px;
+    }
+
+    .photo {
+        position: relative;
+        left: 200px;
+        width: 300px;
+        height: 300px;
+    }
+
+    h1 {
+        position: relative;
+        left: 5px;
+        font-size: 30px;
+    }
+
+    .container-experiences1 {
+        position: relative;
+        left: 50px;
+        width: 500px;
+
+    }
+
+    .container-experiences2 {
+        position: relative;
+        left: 50px;
+        width: 500px;
+    }
+
+    .experience > img {
+        width: 100px;
+        height: 100px;
+    }
 
 
-   .container-projects1{
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      left: 100px;
-      width: 600px;
-      height: 900px;
-   }
+    .hr1 {
+        position: relative;
+        margin-left: 600px;
+        width: 15%;
+    }
 
-   .container-projects1 > img {
-      width: 600px;
-      height: 450px;
-   }
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px; 
+    }
+    .red-logo {
+        width: 60px; 
+        height: 60px;
+        left: -60px;
+        position: relative;
+    }
 
-   .container-projects1 > h3 {
-      font-size: 40px;
-      position: relative;
-      left: 200px;
-      margin-top: 20px;
-   }
-
-   .container-projects1 > p {
-      font-size: 35px;
-      position: relative;
-      left: 10px;
-      margin-top: -20px;
-      max-width: 550px;
-      
-   }
-
-   .container-projects2{
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      left: 780px;
-      width: 600px;
-      height: 900px;
-      margin-top: -935px;
-      margin-right: 200px;
-   }
-
-   .container-projects2 > img {
-      width: 600px;
-      height: 450px;
-   }
-
-   .container-projects2 > h3 {
-      font-size: 40px;
-      position: relative;
-      left: 200px;
-      margin-top: 20px;
-   }
-
-   .container-projects2 > p {
-      font-size: 35px;
-      position: relative;
-      left: 10px;
-      margin-top: -35px;
-      max-width: 590px;
-   }
-
-   .container-projects3{
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      left: 1040px;
-      width: 400px;
-      height: 760px;
-      margin-top: -795px;
-   }
-
-   .container-projects3 > img {
-      width: 400px;
-      height: 300px;
-   }
-
-   .container-projects3 > h3 {
-      font-size: 40px;
-      position: relative;
-      left: 110px;
-      margin-top: 20px;
-   }
-
-   .container-projects3 > p {
-      font-size: 30px;
-      position: relative;
-      left: 10px;
-      margin-top: -35px;
-      max-width: 350px;
-    
-      
-   }
-
-   .btn-project{
-      padding: 20px 50px;
-      font-size: 30px;
-      left: 250px;
-      margin-top: 20px;
-  }
-
-
-   h2{
-      text-align: center;
-      position: relative;
-      left: 500px;
-      font-size: 40px;
-      
-   }
-
-   .logo-sena{
-      width: 70px;
-      margin-top: 20px;
-   }
-
-  .container-info{
-      display: flex;
-      flex-direction: column;
-  }
-
-  .container-info > h2{
-   position: relative;
-   left: 400px;
-   margin-top: -320px;
-   font-size: 40px;
-   width: 1000px;
-  
-  }  
-
-  .container-info > p {
-   text-align: center;
-   position: relative;
-   left: 400px;
-   font-size: 35px;
-   width: 980px;
-   
-   
-  }
-
-  .profile-photo{
-   width: 450px;
-   height: 450px;
-   margin-left: 80px;
-   border: 8px solid #0c0c0c;
-  }
-
-  h1{
-   text-align: center;
-   column-count: 2;
-   font-size: 40px;
-   position: relative;
-   right: 65px;
-  }
-
-  .hr-style{
-   width: 100vw;
-   height: 5px;
-  }
-
- 
-  .container-references{
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      left: 250px;
-      width: 900px;
-      height: 300px;
-  }
-
-  .container-references > h3 {
-   font-size: 40px;
-   margin-top: -0.5px;
-  }
-
-  .container-references > p {
-   margin-left: 25px;
-   font-size: 35px;
-   margin-top: -10px;
-  }
-
- 
-  .container-experiences1,
-.container-experiences2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
-    width: 1100px;
-    height: 300px;
-    position: relative;
-    left: 180px;
-    
-}
-
-.experience > img {
-   width: 300px;
-   height: 250px;
-}
-
-
-   
+    .red-logo:hover {
+        transform: scale(1.2); 
+        filter: brightness(1.2); 
+        transition: transform 0.3s ease; 
+    }
 }
