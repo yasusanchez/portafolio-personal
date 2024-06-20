@@ -2,18 +2,18 @@ body {
     width: 393px;
     height: 852px;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color:#dec3c3;
 }
 
 header {
     width: 100%;
     height: 250px;
-    background-color:#c49797;
+    background-color:#c49797
 }
 
 .photo {
-    width: 9rem;
+    width: -10rem;
     height: 9rem;
     border-radius: 10%;
     margin: 10px;
@@ -27,6 +27,7 @@ h1 {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: -10px;
+    right: 10rem;
 }
 
 .container-information{
@@ -41,7 +42,6 @@ h1 {
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: -10px;
-    background-color: aqua;
 }
 
 .container-information > p {
@@ -50,8 +50,7 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -10px;
     position: relative;
-    right: 0.9px;
-    background-color: #301f1f;
+    right: 10px;
 }
 
 .projects {
@@ -165,8 +164,8 @@ h1 {
 .container-experiences2 {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
-    margin: 10px;
+    gap: 40px;
+    margin: 40px;
 }
 
 .experience {
@@ -205,16 +204,16 @@ progress::-webkit-progress-bar {
     margin-top: 1px; 
 }
 
-hr {
-    border: none;
-    height: 2px;
-    background-color: #0a0a0a;
-    box-shadow: 0 2px 4px #301f1f; 
-    width: 100%;
-    margin: 0 auto; 
+.hr1 {
+    width: 50%;
+    margin: 5px auto;
+    border: 0;
+    border-top: 4px solid black;
+    margin-top: -10px;
+    box-shadow: 0 2px 4px #301f1f;
 }
 
-@media screen and (min-width: 480px) and (max-width: 932px) {
+@media screen and (min-width: 480px) and (max-width: 1040px) {
     header {
         width: 100vw;
     }
@@ -231,18 +230,358 @@ hr {
         margin-left: 65px;
     }
 
+    hr {
+        width: 30%;
+        margin-right: 100%;
+        
+    }
+
     .container-information > h2 {
         align-items: center;
-        margin-left: 85px;
+        margin-left: 60px;
+        width: 100%;
+        margin-top: auto;
     }
 
     .container-information > p {
         position: relative;
-        left: 50px;
+        margin-left: 60px;
+        width: 100%;
     }
 
     .photo {
         margin-left: 50px;
     }
+
+    .footer {
+        width: 300%;
+    } 
+
+    .hr1 {
+        position: relative;
+        margin-left: 150px;
+        width: 15%;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px; /* Espaciado entre las imágenes */
+    }
+
+    .red-logo {
+        width: 40px; 
+        height: 50px;
+        left: -360px;
+        position: relative;
+    }
+
+    .red-logo:hover {
+        transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+        filter: brightness(1.2); /* Aumenta el brillo para mayor efecto */
+        transition: transform 0.3s ease; /* Transición suave */
+    }
 }
 
+@media screen and (min-width: 430px) and (max-width: 932px) {
+    header {
+        position: relative;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+    header {
+        width: 100vw;
+    }
+  
+    main {
+        width: 100vw;
+    }
+
+    .container-information > h2 {
+        align-items: center;
+        margin-left: 300px;
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .container-information > p {
+        position: relative;
+        margin-left: 300px;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .photo {
+        margin-left: 200px;
+    }
+
+    h1 {
+        margin-left: 100px;
+    }
+
+    .container-experiences1 {
+        position: relative;
+        left: 50px;
+        width: 500px;
+        
+    }
+
+    .container-experiences2 {
+        position: relative;
+        left: 50px;
+        width: 500px;
+    }
+
+    .experience > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer {
+        width: 300%;
+    } 
+
+    .hr1 {
+        position: relative;
+        margin-left: 300px;
+        width: 15%;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px; /* Espaciado entre las imágenes */
+    }
+
+    .red-logo {
+        width: 40px; 
+        height: 50px;
+        left: -200px;
+        position: relative;
+    }
+
+    .red-logo:hover {
+        transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+        filter: brightness(1.2); /* Aumenta el brillo para mayor efecto */
+        transition: transform 0.3s ease; /* Transición suave */
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1040px) {
+    header {
+        width: 100vw;
+    }
+}
+
+
+@media screen and (min-width: 975px) and (max-width: 1559px) {
+   header{
+      width: 100vw;
+      height: 65vh;
+   }
+
+
+   .container-projects1{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 100px;
+      width: 600px;
+      height: 900px;
+   }
+
+   .container-projects1 > img {
+      width: 600px;
+      height: 450px;
+   }
+
+   .container-projects1 > h3 {
+      font-size: 40px;
+      position: relative;
+      left: 200px;
+      margin-top: 20px;
+   }
+
+   .container-projects1 > p {
+      font-size: 35px;
+      position: relative;
+      left: 10px;
+      margin-top: -20px;
+      max-width: 550px;
+      
+   }
+
+   .container-projects2{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 780px;
+      width: 600px;
+      height: 900px;
+      margin-top: -935px;
+      margin-right: 200px;
+   }
+
+   .container-projects2 > img {
+      width: 600px;
+      height: 450px;
+   }
+
+   .container-projects2 > h3 {
+      font-size: 40px;
+      position: relative;
+      left: 200px;
+      margin-top: 20px;
+   }
+
+   .container-projects2 > p {
+      font-size: 35px;
+      position: relative;
+      left: 10px;
+      margin-top: -35px;
+      max-width: 590px;
+   }
+
+   .container-projects3{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 1040px;
+      width: 400px;
+      height: 760px;
+      margin-top: -795px;
+   }
+
+   .container-projects3 > img {
+      width: 400px;
+      height: 300px;
+   }
+
+   .container-projects3 > h3 {
+      font-size: 40px;
+      position: relative;
+      left: 110px;
+      margin-top: 20px;
+   }
+
+   .container-projects3 > p {
+      font-size: 30px;
+      position: relative;
+      left: 10px;
+      margin-top: -35px;
+      max-width: 350px;
+    
+      
+   }
+
+   .btn-project{
+      padding: 20px 50px;
+      font-size: 30px;
+      left: 250px;
+      margin-top: 20px;
+  }
+
+
+   h2{
+      text-align: center;
+      position: relative;
+      left: 500px;
+      font-size: 40px;
+      
+   }
+
+   .logo-sena{
+      width: 70px;
+      margin-top: 20px;
+   }
+
+  .container-info{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .container-info > h2{
+   position: relative;
+   left: 400px;
+   margin-top: -320px;
+   font-size: 40px;
+   width: 1000px;
+  
+  }  
+
+  .container-info > p {
+   text-align: center;
+   position: relative;
+   left: 400px;
+   font-size: 35px;
+   width: 980px;
+   
+   
+  }
+
+  .profile-photo{
+   width: 450px;
+   height: 450px;
+   margin-left: 80px;
+   border: 8px solid #0c0c0c;
+  }
+
+  h1{
+   text-align: center;
+   column-count: 2;
+   font-size: 40px;
+   position: relative;
+   right: 65px;
+  }
+
+  .hr-style{
+   width: 100vw;
+   height: 5px;
+  }
+
+ 
+  .container-references{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 250px;
+      width: 900px;
+      height: 300px;
+  }
+
+  .container-references > h3 {
+   font-size: 40px;
+   margin-top: -0.5px;
+  }
+
+  .container-references > p {
+   margin-left: 25px;
+   font-size: 35px;
+   margin-top: -10px;
+  }
+
+ 
+  .container-experiences1,
+.container-experiences2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    width: 1100px;
+    height: 300px;
+    position: relative;
+    left: 180px;
+    
+}
+
+.experience > img {
+   width: 300px;
+   height: 250px;
+}
+
+
+   
+}
